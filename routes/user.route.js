@@ -6,9 +6,7 @@ import {
 } from "../controllers/user.controllers.js";
 
 const RRouter = Router();
-
-RRouter.route("/user").get(getUsers);
+RRouter.route("/").get(getUsers);
 RRouter.route("/register").get(registerUser);
 RRouter.route("/delete").get(deleteUser);
-
 export default RRouter;

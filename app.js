@@ -2,6 +2,7 @@ import express from "express";
 const app = express();
 import cors from "cors";
 import RRouter from "./routes/user.route.js";
+import productsRoute from "./routes/product.route.js";
 // const WhiteListOrigins = ["http://localhost:5173"];
 // const corsOptions = {
 //   origin: function (origin, cb) {
@@ -20,4 +21,5 @@ app.use(
 );
 app.use(express.urlencoded({ extended: true }));
 app.use("/", RRouter);
+app.use("/products", productsRoute);
 export default app;
