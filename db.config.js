@@ -9,7 +9,7 @@ async function connectDB() {
     console.log(`Db connect on port`);
     return connectInstance;
   } catch (error) {
-    console.log("FAIL TO  cCONNECT!!!", error);
+    console.log("FAIL TO  CONNECT!!!", error);
     throw new Error("Failed to connect db ");
   }
 }
