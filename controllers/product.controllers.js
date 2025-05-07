@@ -60,6 +60,18 @@ function getProducts(req, res) {
       Brand: "toyota",
       Nation: "pakistan",
     },
+    {
+      productName: "sajid",
+      Price: 50000,
+      Brand: "nagar",
+      Nation: "pakistan",
+    },
+    {
+      productName: "navtacccc",
+      Price: 400,
+      Brand: "Bata",
+      Nation: "pakistan",
+    },
   ]);
 }
 
