@@ -47,11 +47,6 @@ app.use("/user", userRouter);
 
 // .
 // .
-// .
-// .
-// .
-// .
-// .
-// .
+
 // .
 export default app;
