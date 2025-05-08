@@ -1,9 +1,11 @@
 import express from "express";
 const app = express();
 import cors from "cors";
-import RRouter from "./routes/user.route.js";
+// import RRouter from "./routes/user.route.js";
 import productsRoute from "./routes/product.route.js";
+// import routerUserDb from "./controllers/userDb.controler.js";
 import connectDB from "./db.config.js";
+import userRouter from "./routes/userDb.route.js";
 const whiteListOrigins = ["http://localhost:5173"];
 
 const corsOptions = {
@@ -39,8 +41,9 @@ connectDB()
 //  .
 // .
 app.use(express.urlencoded({ extended: true }));
-app.use("/", RRouter);
+// app.use("/", RRouter);
 app.use("/products", productsRoute);
+app.use("/user", userRouter);
 
 // .
 // .
